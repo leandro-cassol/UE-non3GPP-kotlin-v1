@@ -1,5 +1,5 @@
 # UE-non3GPP-kotlin
-Conversion of the [UE-non3GPP-v1](https://github.com/ciromacedo/UE-non3GPP-v1.git) (User Equipment for non-3GPP access via N3IWF V3.1.1) project to the Kotlin programming language.
+Conversion of the [UE-non3GPP](https://github.com/LABORA-INF-UFG/UE-non3GPP.git) (User Equipment for non-3GPP access via N3IWF V3.1.1) project to the Kotlin programming language.
 
 ### Environment
 The content described in this repository was tested with the following configurations:
@@ -17,7 +17,7 @@ sudo apt update && sudo apt -y install git && sudo apt -y install net-tools && s
 ### Config UE-non3GPP
 Clone the project with the following command:
 ```
-git clone https://github.com/leandro-cassol/UE-non3GPP-kotlin.git
+git clone https://github.com/leandro-cassol/UE-non3GPP-kotlin-v1.git
 ```
 
 Let's assume that there are two other machines configured and already running _free5gc-core_ and _free5gc-n3iwf_. 
@@ -60,7 +60,7 @@ After adjusting all the configuration parameters, registering the UE in free5GC 
 
 ```
 cd UE-non3GPP-kotlin/UE-Non3gppV1
-mvn exec:java -Dexec.mainClass=cmd.MainKt
+mvn exec:java -Dexec.mainClass=cmd.MainKt -Dexec.args="ue"
 ```
 After execution, open another terminal on the same machine and check if a new network interface (eg gretun1) has been created.
 
