@@ -1,0 +1,5 @@
+AuthTime:245ms
+SecurityTime:404ms
+IpsecTime:515ms
+RegisterTime:967ms
+PDUTime:1560ms
